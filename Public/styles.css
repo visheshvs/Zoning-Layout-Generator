@@ -1,0 +1,75 @@
+/* Basic reset to remove padding, margin, and set box-sizing to border-box */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Sets a clean, easy-to-read font */
+    background-color: #f4f4f4; /* Light grey background for minimal strain on eyes */
+    padding: 20px; /* Adds spacing around the content */
+}
+
+/* Header styles, if you decide to add a header later */
+header {
+    background-color: #004288; /* Dark blue for contrast */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Container for layout */
+.container {
+    max-width: 960px; /* Maximum width of the content */
+    margin: 0 auto; /* Centers the container */
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Style for the file upload input */
+#upload {
+    display: block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Style for buttons */
+button {
+    background-color: #007bff; /* Bootstrap blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 0;
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Canvas styles */
+#pdf-render {
+    border: 1px solid #ccc; /* Light grey border around the canvas */
+    width: 100%; /* Full width to use up container space */
+    min-height: 500px; /* Minimum height for better visibility */
+    background-color: #fff; /* White background for the canvas */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 100%; /* Full width on smaller screens */
+        padding: 10px; /* Smaller padding on smaller screens */
+    }
+
+    header, button {
+        font-size: 18px; /* Larger text for readability on small devices */
+    }
+}
